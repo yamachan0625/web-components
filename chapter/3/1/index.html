@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta name="theme-color" content="#16161d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <title>Sample Code</title>
+    <script type="module" src="./todo-item.js"></script>
+    <script type="module" src="./todo-input.js"></script>
+    <script type="module" src="./my-todo.js"></script>
+  </head>
+  <body>
+    <my-todo></my-todo>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 1.4em;
+        background: #222;
+        color: #4d4d4d;
+        min-width: 230px;
+        max-width: 550px;
+        margin: 0 auto;
+        font-weight: 300;
+      }
+
+      h1 {
+        font-size: 100px;
+        font-weight: 100;
+        text-align: center;
+        color: rgba(175, 47, 47, 0.15);
+      }
+
+      section {
+        background: #fff;
+        margin: 30px 0 40px 0;
+        position: relative;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+          0 25px 50px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      #list-container {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border-top: 1px solid #e6e6e6;
+      }
+    </style>
+  </body>
+</html>
