@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sample Code</title>
+    <script type="module" src="./lifecycle-el.js"></script>
+  </head>
+  <body>
+    <p>This is not a custom element.</p>
+    <lifecycle-el name="Alice"></lifecycle-el>
+    <script>
+      setTimeout(() => {
+        document.querySelector('lifecycle-el').remove();
+      }, 2000);
+    </script>
+  </body>
+</html>

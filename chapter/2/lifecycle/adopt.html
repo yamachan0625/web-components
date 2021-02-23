@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sample Code</title>
+  </head>
+  <body>
+    <iframe id="target" src="./index.html"></iframe>
+    <script>
+      setTimeout(() => {
+        let iframeElement = document.getElementById('target');
+        let sourceNode = iframeElement.contentDocument.querySelector(
+          'lifecycle-el'
+        );
+        document.adoptNode(sourceNode, true);
+      }, 2000);
+    </script>
+  </body>
+</html>
